@@ -7,19 +7,26 @@
   <title>Garde converter</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>             
-</head>
-<body class="container">
+      <link rel="stylesheet" href="index.css">
+ </head>
+<body class="container app ">
+  <div class="appContent">
   <div class="title">
-     <h1>Grade Converter/GPA calculator</h1>
+     <h1>Grade Calculator</h1>
   </div>
-  <div class="inputs ">
-    <form>
+  <div class="gradeCalculator">
+   <form class="">
     <label>Points given</label>
-    <input>
+    <input class="inputs" type="number" placeholder="Points Given" id="pointsGiven">
     <label>Total points possible</label>
-    <input>
-    <button class="btn">Calculate Grade!</button>
+    <input class="inputs" type="number" placeholder="Total Points Possible" id="totalPoints">
+    <a class="btn red " id="calculateResultBtn" onclick="displayScore()">Calculate Grade!</a>
   </form>
+  <div id="gradeResult">
+    <h5 id="totalGrade"></h5>
   </div>
+  </div>
+</div>
 </body>
+<script src="index.js"></script>
 </html>
