@@ -10,28 +10,40 @@
       <link rel="stylesheet" href="index.css">
  </head>
 <body class=" bodyApp ">
-  <div class="description">
+<!-- nav -->
+  <nav class = "navcolor">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">GPA</a></li>
+        <li><a href="grade.html">Grade</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- nav end -->
+  <div class="gpa description container">
+     <h3>GPA calculator</h3>
+     <div id="gradepoints">
 
+     </div>
+     <form class = "gpacalculator">
+     <div>
+        <div class="collegeClass">
+        <input class="inputs" placeholder="className"/>
+        <input class = "inputs" placeholder="grade given" required />
+        </div> 
+        <a class="btn grey" id="addOne">Add one more class</a>
+        <a class = "btn yellow" id="calculateGPA" onclick="displayGPA()">Calculate GPA</a>
+    </div>
+    </form>
+    
+    <div>
+      <h5>Total GPA:</h5>
+
+    </div>
   </div>
-  <div class="app">
-  <div class="appContent">
-  <div class="title">
-     <h1>Grade Calculator</h1>
-  </div>
-  <div class="gradeCalculator">
-   <form class="">
-    <label>Points given</label>
-    <input class="inputs" type="number" placeholder="Points Given" id="pointsGiven">
-    <label>Total points possible</label>
-    <input class="inputs" type="number" placeholder="Total Points Possible" id="totalPoints">
-    <a class="btn red " id="calculateResultBtn" onclick="displayScore()">Calculate Grade!</a>
-  </form>
-  <div id="gradeResult">
-    <h5 id="totalGrade"></h5>
-  </div>
-  </div>
-</div>
-</div>
+
+
+
 </body>
 <script src="index.js"></script>
 </html>
